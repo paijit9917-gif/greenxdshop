@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GREEN XD SHOP</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+header{
+background:linear-gradient(90deg,#00c853,#00e676);
+padding:20px;
+text-align:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+.banner{
+padding:30px;
+text-align:center;
+}
+
+.banner h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1e1e1e;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,255,100,.3);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.price{
+font-size:24px;
+color:#00ff88;
+margin:15px 0;
+}
+
+button{
+background:#00c853;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#00e676;
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:20px;
+background:#1a1a1a;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">GREEN XD SHOP</div>
+<p>ร้านเติมเกม ROV</p>
+</header>
+
+<section class="banner">
+<h2>เติมเกมง่าย ปลอดภัย</h2>
+<p>รองรับมือถือและคอมพิวเตอร์</p>
+</section>
+
+<section class="products">
+
+<div class="card">
+<h3>แพ็กเริ่มต้น</h3>
+<p>บริการเติมเกม</p>
+<div class="price">1 บาท</div>
+<button onclick="buy('แพ็กเริ่มต้น')">
+สั่งซื้อ
+</button>
+</div>
+
+<div class="card">
+<h3>แพ็ก VIP</h3>
+<p>บริการเติมเกม</p>
+<div class="price">10 บาท</div>
+<button onclick="buy('แพ็ก VIP')">
+สั่งซื้อ
+</button>
+</div>
+
+<div class="card">
+<h3>แพ็กพรีเมียม</h3>
+<p>บริการเติมเกม</p>
+<div class="price">50 บาท</div>
+<button onclick="buy('แพ็กพรีเมียม')">
+สั่งซื้อ
+</button>
+</div>
+
+</section>
+
+<footer>
+ติดต่อแอดมิน Facebook / Line
+</footer>
+
+<script>
+function buy(product){
+let uid = prompt("กรอก UID ROV");
+
+if(uid){
+alert(
+"รับออเดอร์เรียบร้อย\n\n"+
+"สินค้า: "+product+"\n"+
+"UID: "+uid
+);
+}
+}
+</script>
+
+</body>
+</html>
